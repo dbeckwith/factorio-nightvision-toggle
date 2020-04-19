@@ -46,7 +46,7 @@ local function toggle_nightvision(player)
   end
 
   if any_toggled then
-    -- play sound
+    -- TODO: play sound
   end
 end
 
@@ -56,5 +56,12 @@ script.on_event(defines.events.on_lua_shortcut, function(event)
     if player ~= nil then
       toggle_nightvision(player)
     end
+  end
+end)
+
+script.on_event("sonaxaton-nightvision-toggle", function(event)
+  local player = game.players[event.player_index]
+  if player ~= nil then
+    toggle_nightvision(player)
   end
 end)
