@@ -38,7 +38,9 @@ local function toggle_nightvision(player)
   end
 
   if any_toggled then
-    -- TODO: play sound
+    player.play_sound({
+      path = 'sonaxaton-nightvision-toggle-switch',
+    })
   end
 end
 
