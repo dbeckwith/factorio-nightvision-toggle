@@ -21,8 +21,8 @@ end
 
 local new_nves = {}
 for _, nve in pairs(data.raw['night-vision-equipment']) do
+  log('adding disabled night vision equipment for ' .. nve.name)
   local disabled_nve = make_disabled_nve(nve)
-  log('adding disabled nve ' .. serpent.block(disabled_nve))
   table.insert(new_nves, disabled_nve)
 end
 data:extend(new_nves)
