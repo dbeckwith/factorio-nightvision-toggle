@@ -51,7 +51,7 @@ local function toggle_nightvision(player)
 end
 
 script.on_event(defines.events.on_lua_shortcut, function(event)
-  if event.prototype_name == 'sonaxaton-nightvision-toggle-shortcut' then
+  if event.prototype_name == 'sonaxaton-nightvision-toggle' then
     local player = game.players[event.player_index]
     if player ~= nil then
       toggle_nightvision(player)

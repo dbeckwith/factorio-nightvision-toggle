@@ -4,6 +4,11 @@ local function make_disabled_nve(nve)
 
   -- generate new name
   disabled_nve.name = disabled_nve.name .. '-disabled'
+  -- generate new localized name
+  disabled_nve.localised_name = {
+    'sonaxaton-nightvision-toggle.disabled',
+    {'equipment-name.' .. nve.name},
+  }
   -- make it consume no energy
   disabled_nve.energy_input = '0W'
   -- make it so the night vision never turns on
