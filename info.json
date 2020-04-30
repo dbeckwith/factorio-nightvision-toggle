@@ -7,4 +7,4 @@
   "description": "Enable turning off your nightvision.",
   "factorio_version": "0.18",
   "dependencies": ["base >= 0.18"]
- }
+}
