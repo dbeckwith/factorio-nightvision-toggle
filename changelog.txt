@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 2020-11-29
+  Minor Changes:
+    - Updated to Factorio 1.1
+  Bugfixes:
+    - Fix localised name of disabled nightvision equipment
+---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 2020-08-14
   Minor Changes:
