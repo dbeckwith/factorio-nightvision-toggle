@@ -19,7 +19,7 @@ local function toggle_nightvision(player)
       else
         toggled_name = string.sub(name, 0, idx-1)
       end
-      if game.equipment_prototypes[toggled_name] then
+      if prototypes.equipment[toggled_name] then
         grid.take({
           equipment = name,
           position = position,
@@ -33,6 +33,8 @@ local function toggle_nightvision(player)
           toggled_nve.shield = shield
         end
         any_toggled = true
+      else
+        log('disabled night vision equipment for ' .. name .. ' (' .. toggled_name .. ') not found')
       end
     end
   end

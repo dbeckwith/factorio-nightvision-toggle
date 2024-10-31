@@ -1,10 +1,10 @@
 {
   "name": "sonaxaton-nightvision-toggle",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "title": "Nightvision Toggle",
   "author": "sonaxaton",
   "homepage": "https://mods.factorio.com/mod/sonaxaton-nightvision-toggle",
   "description": "Enable turning off your nightvision.",
-  "factorio_version": "1.1",
+  "factorio_version": "2.0",
   "dependencies": []
 }
